@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kevinagusto.android.basket_score.MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:id="@+id/latbel"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--width=390-->
+            <LinearLayout
+                android:layout_width="170sp"
+                android:layout_height="50sp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu"
+                    android:text="Menu"
+                    android:onClick="menu"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotation="180"
+                    android:id="@+id/lampu"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lamp"
+                    android:onClick="update_session"
+                    android:background="#fffffe"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="10sp">
+                <ImageButton
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="#ffffff"
+                    android:id="@+id/finish"
+                    android:onClick="pemenang"
+                    android:src="@drawable/finish"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/teamA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Team Name"
+                    android:hint="Team Name"
+
+                    android:inputType="text"
+                    android:text="Team A"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!--android:layout_weight="1"-->
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <!--di dalam horizontal, kasih 3 layout vertical: score, gambar, tombol-->
+                <LinearLayout
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:id="@+id/scoreTextA"
+                        android:textAlignment="center"
+                        android:text="Score"/>
+                    <!--score=100, gambar=200, tombol=100-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:id="@+id/scoreA"
+                        android:text="0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/gambarA"
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/seri"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="120sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/bintang0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#000000"
+
+                        />
+                    <ImageButton
+                        android:id="@+id/ball1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ball_submit"
+                        android:background="#ffffff"
+                        android:scaleType="fitCenter"
+                        android:onClick="submitA"
+                        />
+                </LinearLayout>
+                 <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="1"
+                            android:stepSize="1"
+                            android:progressBackgroundTint="#000000"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="1"
+                            android:stepSize="1"
+                            android:progressBackgroundTint="#000000"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--android:layout_weight="1"-->
+            />
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    android:orientation="horizontal"
+    android:id="@+id/garis_tengah"
+    android:background="@color/colorPrimary"> <!--android:background="#005cb2"-->
+    <Button
+        android:layout_width="90sp"
+        android:layout_height="match_parent"
+        android:text="Undo"
+        android:id="@+id/undo"
+        android:hint="Undo the last number has been added"
+        android:contentDescription="Undo the last number has been added"
+        android:onClick="undo"
+        />
+
+
+    <TextView
+        android:layout_width="160sp"
+        android:layout_height="match_parent"
+        android:textColor="#fffffe"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:maxLines="2"
+        android:id="@+id/pesan"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:text="Message"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:onClick="reset"
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/teamB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Team Name"
+                    android:hint="Team Name"
+                    android:inputType="text"
+                    android:text="Team B"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!--android:layout_weight="1"-->
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <!--di dalam horizontal, kasih 3 layout vertical: score, gambar, tombol-->
+                <LinearLayout
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:id="@+id/scoreTextB"
+                        android:text="Score"/>
+                    <!--score=100, gambar=150, tombol=100-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:id = "@+id/scoreB"
+                        android:text="0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/gambarB"
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/seri"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:numStars="1"
+                            android:progressBackgroundTint="#000000"
+                            />
+                        <ImageButton
+                            android:id="@+id/ball2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ball_submit"
+                            android:background="#ffffff"
+                            android:scaleType="fitCenter"
+                            android:onClick="submitB"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:numStars="1"
+                            android:progressBackgroundTint="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/bintang6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="1"
+                            android:stepSize="1"
+                            android:progressBackgroundTint="#000000"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--android:layout_weight="1"-->
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:orientation="horizontal"
+            android:id="@+id/bawah"
+            android:background="#000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="00:00:00"
+                android:id="@+id/waktu"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:gravity="center_vertical"/>
+        </LinearLayout-->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

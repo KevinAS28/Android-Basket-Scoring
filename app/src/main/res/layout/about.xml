@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Kevin Agusto - @RPL-SMKN_1_CIBINONG"
+        android:id="@+id/about0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java: 440 lines, xml: > 500 lines. MANTAP!!! "
+        android:id="@+id/about1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tested on Asus Zenfone 2 (Android 7.1.2 (API 25)) (Lineage: 14.1.0)"
+        android:id="@+id/about2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:onClick="home"
+        android:id="@+id/tombol_home3"
+        android:textSize="20sp"/>
+
+</LinearLayout>

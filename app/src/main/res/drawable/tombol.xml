@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <stroke
+        android:width="2sp"
+        android:id="@+id/tombol_border"
+        android:color="#00e8f4"/>
+
+</shape>

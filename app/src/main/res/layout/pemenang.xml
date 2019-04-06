@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:text=""
+    android:id="@+id/the_winner_is"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:textSize="50sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/winner_team"
+        android:text=""
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="80sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:onClick="home"
+        android:id="@+id/tombol_home4"
+        android:textSize="20sp"/>
+
+</LinearLayout>

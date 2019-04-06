@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Settings"
+    android:onClick="settings"
+    android:textSize="25sp"/-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fitur"
+        android:onClick="fitur"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/about"
+        android:onClick="about"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/tombol_home0"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:onClick="home"/>
+</LinearLayout>
